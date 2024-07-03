@@ -20,9 +20,9 @@ jobs:
           git clone https://github.com/SerenityOS/serenity.git
           cd serenity
           Meta/serenity.sh image
-          find . >files.txt
+          find .
 
-      - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v4.3.3
-        with:
-          path: files.txt
+      # - name: Upload a Build Artifact
+      #   uses: actions/upload-artifact@v4.3.3
+      #   with:
+      #     path: files.txt
