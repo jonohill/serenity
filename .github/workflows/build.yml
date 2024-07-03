@@ -19,7 +19,7 @@ jobs:
           sudo apt install -y build-essential cmake curl libmpfr-dev libmpc-dev libgmp-dev e2fsprogs ninja-build qemu-system-gui qemu-system-x86 qemu-utils ccache rsync unzip texinfo libssl-dev
           git clone https://github.com/SerenityOS/serenity.git
           cd serenity
-          Meta/serenity.sh run
+          Meta/serenity.sh image
           find . >files.txt
 
       - name: Upload a Build Artifact
